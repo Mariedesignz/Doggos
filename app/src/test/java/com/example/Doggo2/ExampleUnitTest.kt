@@ -1,4 +1,4 @@
-package com.example.furrypal
+package com.example.Doggo2
 
 import org.junit.Test
 

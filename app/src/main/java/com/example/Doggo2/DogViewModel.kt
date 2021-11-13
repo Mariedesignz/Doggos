@@ -1,15 +1,16 @@
-package com.example.furrypal
+package com.example.Doggo2
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.furrypal.network.DogPhotoApi
+import com.example.Doggo2.network.DogApiResponse
+import com.example.Doggo2.network.DogPhotoApi
 import kotlinx.coroutines.launch
 
 class DogViewModel : ViewModel() {
-    private val _dogPhoto = MutableLiveData<DogPhotoApi>()
-    val dogPhoto: LiveData<DogPhotoApi> = _dogPhoto
+    private val _dogPhoto = MutableLiveData<DogApiResponse>()
+    val dogPhoto: LiveData<DogApiResponse> = _dogPhoto
 
     init {
         getNewPhoto()
